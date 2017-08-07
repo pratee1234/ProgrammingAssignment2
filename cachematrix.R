@@ -2,6 +2,7 @@
 ## 2nd function computes inverse
 
 ## Assignment Function 1
+## This function creates a special "matrix" object that can cache its inverse
 
 makeCacheMatrix <- function(x = matrix()) {
   i <- NULL
@@ -20,6 +21,9 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Assignment Function 2
+## This function computes the inverse of the special "matrix" created by 
+## makeCacheMatrix above. If the inverse has already been calculated (and the 
+## matrix has not changed), then it should retrieve the inverse from the cache.
 
 cacheSolve <- function(x, ...) {
   i <- x$getInverse()
